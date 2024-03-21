@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Header = () => {
     return (
         <div>
@@ -18,22 +20,22 @@ const Header = () => {
                         </div>
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a href="/" className="hover:bg-[#894EFF] hover:text-white font-medium">Home</a></li>
-                            <li><a href="/users" className="hover:bg-[#894EFF] hover:text-white font-medium">Users</a></li>
-                            <li><a href="/about" className="hover:bg-[#894EFF] hover:text-white font-medium">About</a></li>
-                            <li><a href="/contact" className="hover:bg-[#894EFF] hover:text-white font-medium">Contact</a></li>
+                            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 flex gap-5">
+                            <Link to="/" className="hover:bg-[#894EFF] hover:text-white font-medium">Home</Link>
+                            <Link to="/users" className="hover:bg-[#894EFF] hover:text-white font-medium">Users</Link>
+                            <Link to="/about" className="hover:bg-[#894EFF] hover:text-white font-medium">About</Link>
+                            <Link to="/contact" className="hover:bg-[#894EFF] hover:text-white font-medium">Contact</Link>
                             
                         </ul>
                     </div>
                     <a className="btn btn-ghost text-2xl lg:text-3xl">ElySiAn</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
-                        <li><a href="/" className="hover:bg-[#894EFF] hover:text-white font-medium">Home</a></li>
-                        <li><a href="/users" className="hover:bg-[#894EFF] hover:text-white font-medium">Users</a></li>
-                        <li><a href="/about" className="hover:bg-[#894EFF] hover:text-white font-medium">About</a></li>
-                        <li><a href="/contact" className="hover:bg-[#894EFF] hover:text-white font-medium">Contact</a></li>
+                    <ul className="menu menu-horizontal px-1 flex gap-5">
+                    <Link to="/" className="hover:bg-[#894EFF] hover:text-white font-medium">Home</Link>
+                    <Link to="/users" className="hover:bg-[#894EFF] hover:text-white font-medium">Users</Link>
+                    <Link to="/about" className="hover:bg-[#894EFF] hover:text-white font-medium">About</Link>
+                    <Link to="/contact" className="hover:bg-[#894EFF] hover:text-white font-medium">Contact</Link>
                         
                     </ul>
                 </div>
