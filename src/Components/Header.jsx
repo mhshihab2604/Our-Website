@@ -21,10 +21,10 @@ const Header = () => {
                         <ul
                             tabIndex={0}
                             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 flex gap-5">
-                            <Link to="/" className="hover:bg-[#894EFF] hover:text-white font-medium">Home</Link>
-                            <Link to="/users" className="hover:bg-[#894EFF] hover:text-white font-medium">Users</Link>
-                            <Link to="/about" className="hover:bg-[#894EFF] hover:text-white font-medium">About</Link>
-                            <Link to="/contact" className="hover:bg-[#894EFF] hover:text-white font-medium">Contact</Link>
+                            <Link to="/" className="hover:bg-[#894EFF] p-2 rounded-lg hover:text-white font-medium">Home</Link>
+                            <Link to="/users" className="hover:bg-[#894EFF] p-2 rounded-lg hover:text-white font-medium">Users</Link>
+                            <Link to="/about" className="hover:bg-[#894EFF] p-2 rounded-lg hover:text-white font-medium">About</Link>
+                            <Link to="/contact" className="hover:bg-[#894EFF] p-2 rounded-lg hover:text-white font-medium">Contact</Link>
                             
                         </ul>
                     </div>
@@ -32,10 +32,10 @@ const Header = () => {
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 flex gap-5">
-                    <Link to="/" className="hover:bg-[#894EFF] hover:text-white font-medium">Home</Link>
-                    <Link to="/users" className="hover:bg-[#894EFF] hover:text-white font-medium">Users</Link>
-                    <Link to="/about" className="hover:bg-[#894EFF] hover:text-white font-medium">About</Link>
-                    <Link to="/contact" className="hover:bg-[#894EFF] hover:text-white font-medium">Contact</Link>
+                    <Link to="/" className="hover:bg-[#894EFF] p-2 rounded-lg hover:text-white font-medium">Home</Link>
+                    <Link to="/users" className="hover:bg-[#894EFF] p-2 rounded-lg hover:text-white font-medium">Users</Link>
+                    <Link to="/about" className="hover:bg-[#894EFF] p-2 rounded-lg hover:text-white font-medium">About</Link>
+                    <Link to="/contact" className="hover:bg-[#894EFF] p-2 rounded-lg hover:text-white font-medium">Contact</Link>
                         
                     </ul>
                 </div>
@@ -43,6 +43,7 @@ const Header = () => {
                     <a className="btn">Button</a>
                 </div>
             </div>
+            
         </div>
     );
 };

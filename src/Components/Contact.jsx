@@ -1,4 +1,11 @@
+
+
 const Contact = () => {
+    const handleSubmit = e =>{
+        e.preventDefault();
+        console.log(e.target.email.value);
+        console.log(e.target.password.value);
+    }
     return (
         
         <div className="max-w-7xl mx-auto mt-10">
@@ -11,13 +18,14 @@ const Contact = () => {
                         Access your <br /> personalized dashboard with just a few clicks.</p>
                     </div>
                     <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-                        <form className="card-body">
+                        <form onSubmit={handleSubmit} className="card-body">
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Email</span>
                                 </label>
                                 <input
                                     type="email"
+                                    name="email"
                                     placeholder="email"
                                     className="input input-bordered"
                                     required="required"/>
@@ -28,6 +36,7 @@ const Contact = () => {
                                 </label>
                                 <input
                                     type="password"
+                                    name="password"
                                     placeholder="password"
                                     className="input input-bordered"
                                     required="required"/>

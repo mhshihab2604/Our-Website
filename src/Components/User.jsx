@@ -3,8 +3,8 @@ const User = ({user}) => {
     const {product_name, price, image, description} = user;
     return (
         <div>
-            <div className="card card-side bg-base-100 shadow-xl border-x-2 border-[#8A50FF]">
-                <figure><img className="h-48 w-44 p-5 rounded-3xl"
+            <div className="card w-full h-full bg-base-100 shadow-xl border-x-2 border-[#8A50FF] p-2">
+                <figure><img className="h-52 w-60 rounded-xl"
                     src={image}
                     alt="Movie"/></figure>
                 <div className="card-body">
