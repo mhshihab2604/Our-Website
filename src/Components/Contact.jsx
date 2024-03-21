@@ -6,7 +6,7 @@ const Contact = () => {
             <div className="hero min-h-screen bg-base-300 mt-5">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div className="text-center lg:text-left">
-                        <h1 className="text-3xl lg:text-5xl font-bold">Login now!</h1>
+                        <h1 className="text-2xl lg:text-5xl font-bold">Login now!</h1>
                         <p className="py-6">Effortlessly log in and manage your account securely.
                         Access your <br /> personalized dashboard with just a few clicks.</p>
                     </div>
